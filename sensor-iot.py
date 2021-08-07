@@ -4,9 +4,6 @@ import configparser
 import Adafruit_DHT
 from influxdb import InfluxDBClient
 
-# Configuration File
-CONFIG_FILE = "settings.conf"
-
 def get_reading(config):
     # InfluxDB connection info
     host = "192.168.5.16"
