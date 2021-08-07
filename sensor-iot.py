@@ -6,11 +6,11 @@ from influxdb import InfluxDBClient
 
 def get_reading(config):
     # InfluxDB connection info
-    host = "192.168.5.16"
-    port = "8086"
-    user = "jack"
-    password = "Jack32145"
-    dbname = "roomtemp"
+    host = "DBSERVER"
+    port = "PORT"
+    user = "USER"
+    password = "DBpassword"
+    dbname = "influxDBname"
 
     # Create the InfluxDB client object
     client = InfluxDBClient(host, port, user, password, dbname)
