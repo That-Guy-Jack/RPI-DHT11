@@ -1,0 +1,13 @@
+[Unit]
+Description=Python DHT11 Grafana Script
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+User=ubuntu
+ExecStart=/usr/bin/python3 /home/ubuntu/dht11/sensor-iot.py
+WorkingDirectory=/home/ubuntu/dht11
+
+[Install]
+WantedBy=multi-user.target
